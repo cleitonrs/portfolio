@@ -74,7 +74,7 @@ export const Hero = () => {
         Turn ideas into projects
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/hero1.png" alt="" />
       </div>
     </div>
   );

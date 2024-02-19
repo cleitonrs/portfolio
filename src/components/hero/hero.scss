@@ -50,9 +50,11 @@
     height: 100%;
     position: absolute;
     top: 0px;
-    right: 0px;
-    // border-radius: 50%;
-    // box-shadow: 1px 1px 50px #5d3a8a;
+    right: 100px;
+
+    img {
+      height: 100%;
+    }
   }
 
   .slidingTextContainer {
