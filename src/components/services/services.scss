@@ -11,21 +11,20 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    
+
     p {
       font-weight: 200;
       font-size: 20px;
       color: gray;
       text-align: right;
     }
-  
+
     hr {
       width: 500px;
       border: none;
       border-top: 0.5px solid gray;
     }
   }
-
 
   .titleContainer {
     flex: 2;
@@ -57,7 +56,6 @@
         background-color: orange;
         border: none;
         font-size: 24px;
-        cursor: pointer;
       }
     }
   }
