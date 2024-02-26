@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./portfolio.scss";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
   {
@@ -24,13 +24,36 @@ const items = [
   {
     id: 4,
     title: "Vanilla JS App",
-    img: "https://www.pexels.com/pt-br/foto/computador-laptop-cinza-mostrando-aplicativo-de-calculadora-com-codigos-907487/",
+    img: "https://images.pexels.com/photos/907487/pexels-photo-907487.jpeg",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda a adipisci, quae iusto cum reiciendis quas cupiditate earum! Facere quam aut unde libero id quia non corrupti optio veritatis? Sed.",
   },
 ];
 
 const Single = ({ item }) => {
-  return <section>{item.title}</section>;
+  const ref = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+
+  return (
+    <section>
+      <div className="container">
+        <div className="wrapper">
+          <div className="imageContainer" ref={ref}>
+            <img src={item.img} alt="" />
+          </div>
+          <motion.div className="textContainer" style={{ y }}>
+            <h2>{item.title}</h2>
+            <p>{item.desc}</p>
+            <button>See Demo</button>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export const Portfolio = () => {
