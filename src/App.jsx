@@ -23,10 +23,10 @@ const App = () => {
         <Parallax type="portfolio" />
         Parallax
       </section>
-      <Portfolio />
-      <section id="Contact">
+      {/* <Portfolio /> */}
+      {/* <section id="Contact">
         <Contact />
-      </section>
+      </section> */}
     </div>
   );
 };
