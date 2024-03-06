@@ -133,6 +133,7 @@
         background-color: orange;
         border: none;
         cursor: pointer;
+        border-radius: 10px;
 
         @include mobile {
           background-color: transparent;
