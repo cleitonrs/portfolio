@@ -43,7 +43,7 @@ export const Services = () => {
         <div className="title">
           <img src="./people.webp" alt="" />
           <h1>
-            <motion.strong whileHover={{ color: "orange" }}>
+            <motion.strong whileHover={{ color: "#a3e635" }}>
               Unique
             </motion.strong>{" "}
             Ideas
@@ -51,7 +51,7 @@ export const Services = () => {
         </div>
         <div className="title">
           <h1>
-            <motion.strong whileHover={{ color: "orange" }}>
+            <motion.strong whileHover={{ color: "#gray5" }}>
               For Your
             </motion.strong>{" "}
             Business.
@@ -62,7 +62,7 @@ export const Services = () => {
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "gray", color: "black" }}
         >
           <h2>Branding</h2>
           <p>
@@ -75,7 +75,7 @@ export const Services = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "gray", color: "black" }}
         >
           <h2>Branding</h2>
           <p>
@@ -88,7 +88,7 @@ export const Services = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "gray", color: "black" }}
         >
           <h2>Branding</h2>
           <p>
