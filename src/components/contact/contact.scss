@@ -87,6 +87,10 @@
         font-weight: 500;
         border-radius: 5px;
 
+        &:hover {
+          background-color: #84cc16;
+        }
+
         @include mobile {
           padding: 10px;
         }

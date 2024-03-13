@@ -51,7 +51,7 @@ export const Services = () => {
         </div>
         <div className="title">
           <h1>
-            <motion.strong whileHover={{ color: "#gray5" }}>
+            <motion.strong whileHover={{ color: "#a3e635" }}>
               For Your
             </motion.strong>{" "}
             Business.

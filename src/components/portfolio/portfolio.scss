@@ -102,6 +102,10 @@
           padding: 10px;
           width: 200px;
           cursor: pointer;
+
+          &:hover {
+            background-color: #84cc16;
+          }
         }
       }
     }
