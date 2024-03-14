@@ -14,6 +14,10 @@
     align-items: center;
     gap: 20px;
 
+    @include tablet {
+      margin: 50px 0;
+    }
+
     @include mobile {
       align-self: center;
       text-align: center;
@@ -53,6 +57,12 @@
       align-items: center;
       gap: 50px;
 
+      @include tablet {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+      }
+
       @include mobile {
         flex-direction: column;
         text-align: center;
@@ -75,6 +85,10 @@
         font-size: 96px;
         font-weight: 100;
 
+        @include tablet {
+          font-size: 72px;
+        }
+
         @include mobile {
           font-size: 36px;
         }
@@ -87,6 +101,13 @@
         background-color: #a3e635;
         border: none;
         font-size: 24px;
+
+        @include tablet {
+          font-size: 20px;
+          width: 200px;
+          height: 60px;
+          margin-bottom: 50px;
+        }
 
         @include mobile {
           font-size: 16px;
@@ -102,6 +123,11 @@
     max-width: 1366px;
     margin: auto;
 
+    @include tablet {
+      flex-direction: column;
+      width: 60%;
+    }
+
     @include mobile {
       flex-direction: column;
       width: 100%;
@@ -114,6 +140,13 @@
       flex-direction: column;
       justify-content: space-between;
 
+      @include tablet {
+        border: none;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+      }
+
       @include mobile {
         border: none;
         align-items: center;
@@ -122,6 +155,12 @@
       }
 
       p {
+        padding: 20px 0;
+
+        @include tablet {
+          display: none;
+        }
+
         @include mobile {
           display: none;
         }
@@ -133,6 +172,15 @@
         border: none;
         cursor: pointer;
         border-radius: 10px;
+
+        @include tablet {
+          background-color: transparent;
+          border: 1px solid #a3e635;
+          border-radius: 5px;
+          color: #a3e635;
+          width: 50%;
+          padding: 8px;
+        }
 
         @include mobile {
           background-color: transparent;
