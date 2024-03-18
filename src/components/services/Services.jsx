@@ -30,12 +30,12 @@ export const Services = () => {
       variants={variants}
       initial="initial"
       ref={ref}
-      animate={isInView && "animate"}
+      animate={window.innerWidth <= 738 ? "animate" : isInView && "animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          Meu foco é ajudar sua marca a crescer
+          <br /> e seguir em frente
         </p>
         <hr />
       </motion.div>
@@ -43,20 +43,20 @@ export const Services = () => {
         <div className="title">
           <img src="./people.webp" alt="" />
           <h1>
+            Ideias{" "}
             <motion.strong whileHover={{ color: "#a3e635" }}>
-              Unique
-            </motion.strong>{" "}
-            Ideas
+              Únicas
+            </motion.strong>
           </h1>
         </div>
         <div className="title">
           <h1>
             <motion.strong whileHover={{ color: "#a3e635" }}>
-              For Your
+              Para Seus
             </motion.strong>{" "}
-            Business.
+            Negócios.
           </h1>
-          <button>WHAT WE DO?</button>
+          <button>O QUE FAÇO?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -71,7 +71,7 @@ export const Services = () => {
             doloremque, temporibus numquam error facere dolores perspiciatis
             laudantium nemo magni iste dolorem!
           </p>
-          <button>Go</button>
+          <button>Ver</button>
         </motion.div>
         <motion.div
           className="box"
@@ -84,7 +84,7 @@ export const Services = () => {
             doloremque, temporibus numquam error facere dolores perspiciatis
             laudantium nemo magni iste dolorem!
           </p>
-          <button>Go</button>
+          <button>Ver</button>
         </motion.div>
         <motion.div
           className="box"
@@ -97,7 +97,7 @@ export const Services = () => {
             doloremque, temporibus numquam error facere dolores perspiciatis
             laudantium nemo magni iste dolorem!
           </p>
-          <button>Go</button>
+          <button>Ver</button>
         </motion.div>
       </motion.div>
     </motion.div>

@@ -54,13 +54,11 @@ export const Hero = () => {
           <motion.div variants={textVariants} className="buttons">
             <a href="#Portfolio">
               <motion.button variants={textVariants}>
-                See the Last Works
+                Ver Projetos
               </motion.button>
             </a>
             <a href="#Contact">
-              <motion.button variants={textVariants}>
-                Contact Me
-              </motion.button>
+              <motion.button variants={textVariants}>Contato</motion.button>
             </a>
           </motion.div>
           <motion.img
@@ -77,7 +75,7 @@ export const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Turn ideas into projects
+        Transforme ideias em projetos
       </motion.div>
       <div className="imageContainer">
         <img src="/hero1.png" alt="" />
