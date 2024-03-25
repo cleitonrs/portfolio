@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       <section id="Homepage">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Hero />
       </section>
       <section id="Services">

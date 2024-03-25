@@ -15,6 +15,7 @@
   }
 
   @include mobile {
+    height: 100vh;
     width: 100%;
     padding: 10px;
     flex-direction: column;
@@ -34,10 +35,9 @@
     }
 
     @include mobile {
-      gap: 20px;
+      gap: 10px;
       text-align: center;
       align-items: center;
-      margin-top: 70px;
     }
 
     h1 {
@@ -45,7 +45,8 @@
       line-height: 88px;
 
       @include mobile {
-        font-size: 36px;
+        font-size: 32px;
+        line-height: 44px;
       }
     }
 
@@ -64,8 +65,8 @@
     }
 
     @include mobile {
-      width: 100%;
-      padding: 50px;
+      width: 90%;
+      padding: 10px;
     }
 
     .phoneSvg {
@@ -80,7 +81,7 @@
       }
 
       @include mobile {
-        right: 10px;
+        right: -10px;
         bottom: 50px;
       }
     }

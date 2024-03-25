@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const variants = {
   initial: {
@@ -21,8 +22,10 @@ const variants = {
 export const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const isInView = useInView(ref, { margin: "-100px" });
 
@@ -35,10 +38,13 @@ export const Contact = () => {
       })
       .then(
         () => {
-          setSuccess(true);
+          setName("");
+          setEmail("");
+          setMessage("");
+          toast.success("Mensagem enviada!");
         },
         (error) => {
-          setError(true);
+          toast.error("Algo deu errado!");
         }
       );
   };
@@ -103,12 +109,31 @@ export const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Nome" name="name" />
-          <input type="email" required placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Mensagem" name="message" />
+          <input
+            type="text"
+            required
+            placeholder="Nome"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            required
+            placeholder="Email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <textarea
+            rows={8}
+            required
+            placeholder="Mensagem"
+            name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
           <button>Enviar</button>
-          {error && "Error"}
-          {success && "Success"}
         </motion.form>
       </div>
     </motion.div>
