@@ -5,27 +5,27 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda a adipisci, quae iusto cum reiciendis quas cupiditate earum! Facere quam aut unde libero id quia non corrupti optio veritatis? Sed.",
+    title: "Design para um Restaurante Delivery",
+    img: "/restaurant.png",
+    desc: "UI design para um website responsivo de Restaurante Delivery.",
   },
   {
     id: 2,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/5417836/pexels-photo-5417836.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda a adipisci, quae iusto cum reiciendis quas cupiditate earum! Facere quam aut unde libero id quia non corrupti optio veritatis? Sed.",
+    title: "Landing page",
+    img: "/landingpage.png",
+    desc: "Modelo de página de vendas, para uma cliente",
   },
   {
     id: 3,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=600",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda a adipisci, quae iusto cum reiciendis quas cupiditate earum! Facere quam aut unde libero id quia non corrupti optio veritatis? Sed.",
+    title: "App de Notas",
+    img: "/notes.png",
+    desc: "Uma aplicação para gerenciar suas anotações e lembretes com a possibilidade de transcrever notas de audio em texto.",
   },
   {
     id: 4,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/907487/pexels-photo-907487.jpeg",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda a adipisci, quae iusto cum reiciendis quas cupiditate earum! Facere quam aut unde libero id quia non corrupti optio veritatis? Sed.",
+    title: "Portfolio",
+    img: "https://user-images.githubusercontent.com/62728037/142930110-f8752416-f31e-400b-9658-e555bba23029.jpg",
+    desc: "Modelo de Portfolio para cliente.",
   },
 ];
 
