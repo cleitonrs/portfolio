@@ -78,7 +78,7 @@ export const Hero = () => {
         Transforme ideias em projetos
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero2.png" alt="Foto de Cleiton Santos" />
+        <img src="/hero5.png" alt="Foto de Cleiton Santos" />
       </div>
     </div>
   );
