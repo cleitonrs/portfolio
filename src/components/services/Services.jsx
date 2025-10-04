@@ -64,40 +64,31 @@ export const Services = () => {
           className="box"
           whileHover={{ background: "gray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Identidade Visual Profissional</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            nulla nisi vitae atque est minus laboriosam provident aliquam
-            doloremque, temporibus numquam error facere dolores perspiciatis
-            laudantium nemo magni iste dolorem!
+            Criação de logotipos, paleta de cores e guias de estilo que
+            fortalecem a presença da sua marca no mercado.
           </p>
-          <button>Ver</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "gray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Design UI/UX para Web e Mobile</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            nulla nisi vitae atque est minus laboriosam provident aliquam
-            doloremque, temporibus numquam error facere dolores perspiciatis
-            laudantium nemo magni iste dolorem!
+            Experiências intuitivas e agradáveis, com foco na usabilidade e
+            estética em qualquer dispositivo.
           </p>
-          <button>Ver</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "gray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Desenvolvimento Web Full Stack</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            nulla nisi vitae atque est minus laboriosam provident aliquam
-            doloremque, temporibus numquam error facere dolores perspiciatis
-            laudantium nemo magni iste dolorem!
+            Sites modernos, responsivos e otimizados com as melhores práticas em
+            tecnologias como React, Node.js e APIs REST.
           </p>
-          <button>Ver</button>
         </motion.div>
       </motion.div>
     </motion.div>

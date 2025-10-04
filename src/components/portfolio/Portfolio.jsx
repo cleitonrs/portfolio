@@ -8,24 +8,28 @@ const items = [
     title: "Design para um Restaurante Delivery",
     img: "/restaurant.png",
     desc: "UI design para um website responsivo de Restaurante Delivery.",
+    url: "https://restaurant-six-iota.vercel.app/"
   },
   {
     id: 2,
     title: "Landing page",
     img: "/landingpage.png",
     desc: "Modelo de página de vendas, para uma cliente",
+    url: "https://cleitonrs.github.io/pagina-de-vendas/"
   },
   {
     id: 3,
     title: "App de Notas",
     img: "/notes.png",
     desc: "Uma aplicação para gerenciar suas anotações e lembretes com a possibilidade de transcrever notas de audio em texto.",
+    url: "https://crsmynotes.vercel.app/"
   },
   {
     id: 4,
     title: "Portfolio",
     img: "https://user-images.githubusercontent.com/62728037/142930110-f8752416-f31e-400b-9658-e555bba23029.jpg",
     desc: "Modelo de Portfolio para cliente.",
+    url: "https://react-portfolio21.netlify.app/"
   },
 ];
 
@@ -48,7 +52,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <button><a href={item.url} target="_blanK" rel="noreferrer">Visualizar</a></button>
           </motion.div>
         </div>
       </div>
