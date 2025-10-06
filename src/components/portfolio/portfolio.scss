@@ -11,6 +11,7 @@
     text-align: center;
     color: #a3e635;
     font-size: 36px;
+    z-index: -1;
 
     @include tablet {
       padding-top: calc(100vh - 100px);
